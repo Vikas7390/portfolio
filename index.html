@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> -->
+    <script src="https://kit.fontawesome.com/b69f32b8c9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href=".skills">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Front-End React <br> Developer <img src="images/hi.png" alt="hi img"></h1> <br>
+                <p class="one">Hi, I'm Vikas Kamsani. <br> <br> A passionate Front-end React <br> Developer based in Telangana,
+                    India. 📍</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image.jpg" alt="My photo">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me </h1><br>
+                    <p class="lorem">"I am an electrical engineering student at Kakatiya University
+                        in Hanamkonda, with a passion for front-end development and React. <br>
+                        I enjoy creating user-friendly web applications and keeping up with the latest industry trends.
+                        I am actively seeking internships and job opportunities to apply my skills and gain practical
+                        experience.
+                        I am excited to collaborate with experienced professionals in the tech industry and contribute
+                        to
+                        innovative projects."</p> <br>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Web developer</span></li>
+                            <li><span>React Developer</span></li>
+                            <li><span>Content Writer</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern at </span> <span class="tab2"> Code Clause</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span> <br> Engineering at Kakatiya University</li>
+                            <li><span>2020</span> <br>Secondary Education from Srichaitanya junior kalasala with
+                                percentage of 90</li>
+                            <li><span>2018</span><br>SSC from Fuscos high school with percentage of 80.5</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <div class="skills">
+                        <p>Tech Stack</p>
+                        <div class="logos">
+                            <ul>
+                                <li><img src="images/logo1.jpg" alt="Html"></li>
+                                <li><img src="images/logo2.jpg" alt="CSS"></li>
+                                <li><img src="images/logo3.jpg" alt="JS"></li>
+                                <li><img src="images/logo4.jpg" alt="React"></li>
+                                <li><img src="images/logo5.jpg" alt="Scss"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My portfolio</h1>
+            <div class="projects-grid">
+                <div class="pro pro__1">
+                    <div class="pro__img">
+                        <a href="" target="dino game">
+                            <img src="images/dinosaur-game.png" alt="game">
+                        </a>
+                    </div>
+                    <div class="pro__text">
+                        <h1>Dino game 🦖</h1> <br>
+                        <p>The dino game, also known as the Chrome Dinosaur or T-Rex game,
+                            is a simple yet addictive browser-based game that was created by Google. This code is an
+                            exact clone of it</p>
+                        <div class="stack">
+                            <p>CSS</p>
+                            <p>Java Script</p>
+                        </div> <br>
+                        <div class="links">
+                            <a href="https://vikas7390.github.io/DinoGame/" target="_blank">GitHub Page <i
+                                    class="fa-brands fa-github" style="color: #fb1818;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro pro__1">
+                    <div class="pro__img">
+                        <a href="" target="website with L and R">
+                            <img src="images/weblr.png" alt="website">
+                        </a>
+                    </div>
+                    <div class="pro__text">
+                        <h1> Website 💻</h1> <br>
+                        <p>Website with a login and register <br> It contains sign-in options, navigation bar and social
+                            media icons</p>
+                        <div class="stack">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                        </div> <br>
+                        <div class="links">
+                            <a href="https://vikas7390.github.io/Website-with-L-R/" target="_blank">GitHub Page <i
+                                    class="fa-brands fa-github" style="color: #fb1818;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pro pro__1">
+                    <div class="pro__img">
+                        <a href="" target="movie website">
+                            <img src="images/mov.png" alt="website">
+                        </a>
+                    </div>
+                    <div class="pro__text">
+                        <h1>Movie Website</h1> <br>
+                        <p>Movie Website With header and some movie posters with hover effect </p> <br>
+                        <div class="stack">
+                            <p>HTML</p>
+                            <p>CSS</p> <br>
+                        </div> <br>
+                        <div class="links">
+                            <a href="https://vikas7390.github.io/movie-website/" target="_blank">GitHub Page <i
+                                    class="fa-brands fa-github" style="color: #fb1818;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>vikaskamsani2002@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i>79898722196</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/vikas-kamsani-56662424a/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/Vikas7390" target="_blank"><i
+                                        class="fa-brands fa-github"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/kamsani_vikas_reddy/" target="_blank"><i
+                                        class="fa-brands fa-instagram"></i></a>
+
+                            </div>
+                            <a href="" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright &copy; Vikas Kamsani</p>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+
+</body>
+
+</html>
